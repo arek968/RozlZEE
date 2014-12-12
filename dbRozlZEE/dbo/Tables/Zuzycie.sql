@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Zuzycie] (
+    [Id]                       INT            IDENTITY (1, 1) NOT NULL,
+    [idPrzylacze]              INT            NOT NULL,
+    [DataOdczytu]              DATE           NOT NULL,
+    [DoZaplatyNetto]           MONEY          NOT NULL,
+    [DoZaplatyVAT]             MONEY          NOT NULL,
+    [DoZaplatyBrutto]          MONEY          NOT NULL,
+    [EnergiaCzynnaRazem]       REAL           NULL,
+    [EergiaBiernaPobranaRazem] REAL           NULL,
+    [EnergiaBiernaOddanaRazem] REAL           NULL,
+    [ZwrotyBonifikaty]         MONEY          NULL,
+    [Zaliczka]                 MONEY          NULL,
+    [CzasMocyMaksymalnej]      REAL           NULL,
+    [CenaSrednia]              MONEY          NULL,
+    [TangensFi]                REAL           NULL,
+    [PowodKorekty]             NVARCHAR (500) NULL,
+    [CzyKorekta]               BIT            NULL,
+    [DataKorekty]              DATE           NULL,
+    [idTaryfa]                 INT            NOT NULL,
+    [NrFaktury]                NVARCHAR (50)  NULL,
+    [NettoFaktury]             MONEY          NULL,
+    [VATFaktury]               MONEY          NULL,
+    [BruttoFaktury]            MONEY          NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Zuzycie_ToPrzylacze] FOREIGN KEY ([idPrzylacze]) REFERENCES [dbo].[Przylacze] ([Id]),
+    CONSTRAINT [FK_Zuzycie_ToTaryfa] FOREIGN KEY ([idTaryfa]) REFERENCES [dbo].[Taryfa] ([Id])
+);
+
