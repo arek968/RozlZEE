@@ -32,6 +32,7 @@ namespace TestyJezyka
                     Console.WriteLine(nm);
                 }
 
+                //zmiana w programie do testów GIT
 
                 /*while (true)
                 {
