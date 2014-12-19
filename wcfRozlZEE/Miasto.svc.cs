@@ -26,5 +26,23 @@ namespace wcfRozlZEE
         }
 
         // Add more operations here and mark them with [OperationContract]
+        [OperationContract]
+        public List<string> ListaMiast()
+        {
+            // Add your operation implementation here
+            List<string> miasta = new List<string> ();
+            miasta.Add("Gdańsk");
+            miasta.Add("Gdynia");
+            miasta.Add("Zurich");
+            miasta.Add("Londyn");
+            miasta.Add("Warszawa");
+            return miasta;
+        }
+        [OperationContract]
+        public string getMiasto(int id)
+        {
+            // Add your operation implementation here
+            return "New York";
+        }
     }
 }

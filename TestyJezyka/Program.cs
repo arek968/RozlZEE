@@ -9,8 +9,18 @@ namespace TestyJezyka
 {
     class Program
     {
+
+        static private bool IsLeapYear(int year) { return (((year % 4) == 0) && !((year % 100) == 0)) || ((year % 400) == 0);}
+
+
         static void Main(string[] args)
         {
+            //Console.WriteLine(string.Format("Rok {0} przestępny - {1}", 1900, IsLeapYear(1900)));
+            //Console.WriteLine(string.Format("Rok {0} przestępny - {1}", 1980, IsLeapYear(1980)));
+            //Console.WriteLine(string.Format( "Rok {0} przestępny - {1}", 1999,  IsLeapYear(1999)));
+            //Console.WriteLine(string.Format("Rok {0} przestępny - {1}", 2000, IsLeapYear(2000)));
+            //Console.ReadLine();
+            //return;
 
             using (var ctx = new RozlZEEEntities())
             {
