@@ -27,9 +27,9 @@ namespace TestyJezyka
                 //Can perform CRUD operation using ctx here..
 
                 //Miasto lm = from miasta in ctx.Miasto select miasta;
-                const string warunek = "GDA";
+                const string strWarunek = "GDA";
                             
-                var lm = (from m in ctx.Miasto where !m.Nazwa.ToUpper().StartsWith(warunek) orderby m.Nazwa descending select m);
+                var lm = (from m in ctx.Miasto where !m.Nazwa.ToUpper().StartsWith(strWarunek) orderby m.Nazwa descending select m);
                 foreach (var miasto in lm)
 	            {
 		            Console.WriteLine(miasto.Nazwa);
