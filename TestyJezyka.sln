@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfRozlZEE", "wcfRozlZEE\wc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.RozlZEE", "WebAPI.RozlZEE\WebAPI.RozlZEE.csproj", "{73BD25D1-C709-41C1-AF35-A4371DB49562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.RozlZEE.na", "WebApplication1\WebAPI.RozlZEE.na.csproj", "{B775B6B6-6B27-46B2-87FC-84085AF800EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{B775B6B6-6B27-46B2-87FC-84085AF800EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
