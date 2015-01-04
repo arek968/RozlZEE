@@ -14,15 +14,8 @@ namespace WebApplication1.Models
     
     public partial class StawkaVAT
     {
-        public StawkaVAT()
-        {
-            this.Cena = new HashSet<Cena>();
-        }
-    
         public int Id { get; set; }
         public string Kod { get; set; }
         public Nullable<float> Wartosc { get; set; }
-    
-        public virtual ICollection<Cena> Cena { get; set; }
     }
 }

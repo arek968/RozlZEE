@@ -14,14 +14,7 @@ namespace WebApplication1.Models
     
     public partial class JednostkaMiary
     {
-        public JednostkaMiary()
-        {
-            this.SkladnikTaryfy = new HashSet<SkladnikTaryfy>();
-        }
-    
         public int Id { get; set; }
         public string Nazwa { get; set; }
-    
-        public virtual ICollection<SkladnikTaryfy> SkladnikTaryfy { get; set; }
     }
 }

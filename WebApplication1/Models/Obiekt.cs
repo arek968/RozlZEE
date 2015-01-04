@@ -14,15 +14,8 @@ namespace WebApplication1.Models
     
     public partial class Obiekt
     {
-        public Obiekt()
-        {
-            this.Odbiorca = new HashSet<Odbiorca>();
-        }
-    
         public int Id { get; set; }
         public string Nazwa { get; set; }
         public string Konto { get; set; }
-    
-        public virtual ICollection<Odbiorca> Odbiorca { get; set; }
     }
 }

@@ -18,7 +18,6 @@ namespace WebApplication1.Models
         {
             this.Cena = new HashSet<Cena>();
             this.PozycjaZuzycia = new HashSet<PozycjaZuzycia>();
-            this.Licznik = new HashSet<Licznik>();
         }
     
         public int Id { get; set; }
@@ -37,6 +36,5 @@ namespace WebApplication1.Models
         public virtual JednostkaMiary JednostkaMiary { get; set; }
         public virtual ICollection<PozycjaZuzycia> PozycjaZuzycia { get; set; }
         public virtual Taryfa Taryfa { get; set; }
-        public virtual ICollection<Licznik> Licznik { get; set; }
     }
 }

@@ -14,17 +14,10 @@ namespace WebApplication1.Models
     
     public partial class Rok
     {
-        public Rok()
-        {
-            this.OsrodekKosztow = new HashSet<OsrodekKosztow>();
-        }
-    
         public int Id { get; set; }
         public int Numer { get; set; }
         public string MaskaKosztu { get; set; }
         public string DomyslnyStaly { get; set; }
         public string DomyslnyZmienny { get; set; }
-    
-        public virtual ICollection<OsrodekKosztow> OsrodekKosztow { get; set; }
     }
 }

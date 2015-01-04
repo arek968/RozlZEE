@@ -14,11 +14,6 @@ namespace WebApplication1.Models
     
     public partial class Zuzycie
     {
-        public Zuzycie()
-        {
-            this.PozycjaZuzycia = new HashSet<PozycjaZuzycia>();
-        }
-    
         public int Id { get; set; }
         public int idPrzylacze { get; set; }
         public System.DateTime DataOdczytu { get; set; }
@@ -42,7 +37,6 @@ namespace WebApplication1.Models
         public Nullable<decimal> VATFaktury { get; set; }
         public Nullable<decimal> BruttoFaktury { get; set; }
     
-        public virtual ICollection<PozycjaZuzycia> PozycjaZuzycia { get; set; }
         public virtual Przylacze Przylacze { get; set; }
         public virtual Taryfa Taryfa { get; set; }
     }

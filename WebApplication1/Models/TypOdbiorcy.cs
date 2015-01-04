@@ -14,14 +14,7 @@ namespace WebApplication1.Models
     
     public partial class TypOdbiorcy
     {
-        public TypOdbiorcy()
-        {
-            this.Odbiorca = new HashSet<Odbiorca>();
-        }
-    
         public int Id { get; set; }
         public string Nazwa { get; set; }
-    
-        public virtual ICollection<Odbiorca> Odbiorca { get; set; }
     }
 }

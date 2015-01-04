@@ -14,12 +14,6 @@ namespace WebApplication1.Models
     
     public partial class Licznik
     {
-        public Licznik()
-        {
-            this.OdczytLicznika = new HashSet<OdczytLicznika>();
-            this.SkladnikTaryfy = new HashSet<SkladnikTaryfy>();
-        }
-    
         public int Id { get; set; }
         public Nullable<int> idPrzylacze { get; set; }
         public string NrFabryczny { get; set; }
@@ -31,7 +25,5 @@ namespace WebApplication1.Models
         public string Opis { get; set; }
     
         public virtual Przylacze Przylacze { get; set; }
-        public virtual ICollection<OdczytLicznika> OdczytLicznika { get; set; }
-        public virtual ICollection<SkladnikTaryfy> SkladnikTaryfy { get; set; }
     }
 }

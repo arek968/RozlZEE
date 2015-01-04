@@ -702,7 +702,6 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="SkladnikTaryfy" Relationship="Self.FK_SkladnikTaryfy_ToJednostkaMiary" FromRole="JednostkaMiary" ToRole="SkladnikTaryfy" />
         </EntityType>
         <EntityType Name="Licznik">
           <Key>
@@ -718,8 +717,6 @@
           <Property Name="Kolejnosc" Type="Byte" />
           <Property Name="Opis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Przylacze" Relationship="Self.FK_Licznik_ToPrzylacze" FromRole="Licznik" ToRole="Przylacze" />
-          <NavigationProperty Name="OdczytLicznika" Relationship="Self.FK_OdczytLicznika_ToLicznik" FromRole="Licznik" ToRole="OdczytLicznika" />
-          <NavigationProperty Name="SkladnikTaryfy" Relationship="Self.SkladnikLicznika" FromRole="Licznik" ToRole="SkladnikTaryfy" />
         </EntityType>
         <EntityType Name="Miasto">
           <Key>
@@ -728,7 +725,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nazwa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Konto" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Odbiorca" Relationship="Self.FK_Odbiorca_ToMiasto" FromRole="Miasto" ToRole="Odbiorca" />
         </EntityType>
         <EntityType Name="MocZamowiona">
           <Key>
@@ -748,7 +744,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nazwa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Konto" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Odbiorca" Relationship="Self.FK_Odbiorca_ToObiekt" FromRole="Obiekt" ToRole="Odbiorca" />
         </EntityType>
         <EntityType Name="Odbiorca">
           <Key>
@@ -860,7 +855,6 @@
           <Property Name="MaskaKosztu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DomyslnyStaly" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DomyslnyZmienny" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="OsrodekKosztow" Relationship="Self.FK_OsrodekKosztow_ToRok" FromRole="Rok" ToRole="OsrodekKosztow" />
         </EntityType>
         <EntityType Name="SkladnikTaryfy">
           <Key>
@@ -881,7 +875,6 @@
           <NavigationProperty Name="JednostkaMiary" Relationship="Self.FK_SkladnikTaryfy_ToJednostkaMiary" FromRole="SkladnikTaryfy" ToRole="JednostkaMiary" />
           <NavigationProperty Name="PozycjaZuzycia" Relationship="Self.FK_PozycjaZuzycia_ToSkladnikTaryfy" FromRole="SkladnikTaryfy" ToRole="PozycjaZuzycia" />
           <NavigationProperty Name="Taryfa" Relationship="Self.FK_SkladnikTaryfy_ToTaryfa" FromRole="SkladnikTaryfy" ToRole="Taryfa" />
-          <NavigationProperty Name="Licznik" Relationship="Self.SkladnikLicznika" FromRole="SkladnikTaryfy" ToRole="Licznik" />
         </EntityType>
         <EntityType Name="StawkaVAT">
           <Key>
@@ -890,7 +883,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Kod" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Wartosc" Type="Single" />
-          <NavigationProperty Name="Cena" Relationship="Self.FK_Cena_ToStawkaVAT" FromRole="StawkaVAT" ToRole="Cena" />
         </EntityType>
         <EntityType Name="Taryfa">
           <Key>
@@ -911,7 +903,6 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Odbiorca" Relationship="Self.FK_Odbiorca_ToTypOdbiorcy" FromRole="TypOdbiorcy" ToRole="Odbiorca" />
         </EntityType>
         <EntityType Name="Ulica">
           <Key>
@@ -920,7 +911,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Konto" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Odbiorca" Relationship="Self.FK_Odbiorca_ToUlica" FromRole="Ulica" ToRole="Odbiorca" />
         </EntityType>
         <EntityType Name="Zaklad">
           <Key>
@@ -957,7 +947,6 @@
           <Property Name="NettoFaktury" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="VATFaktury" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="BruttoFaktury" Type="Decimal" Precision="19" Scale="4" />
-          <NavigationProperty Name="PozycjaZuzycia" Relationship="Self.FK_PozycjaZuzycia_ToZuzycie" FromRole="Zuzycie" ToRole="PozycjaZuzycia" />
           <NavigationProperty Name="Przylacze" Relationship="Self.FK_Zuzycie_ToPrzylacze" FromRole="Zuzycie" ToRole="Przylacze" />
           <NavigationProperty Name="Taryfa" Relationship="Self.FK_Zuzycie_ToTaryfa" FromRole="Zuzycie" ToRole="Taryfa" />
         </EntityType>
