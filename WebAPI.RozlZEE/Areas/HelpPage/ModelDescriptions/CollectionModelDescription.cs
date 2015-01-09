@@ -1,4 +1,4 @@
-namespace WebAPI.RozlZEE.Areas.HelpPage.ModelDescriptions
+namespace WebApplication1.Areas.HelpPage.ModelDescriptions
 {
     public class CollectionModelDescription : ModelDescription
     {

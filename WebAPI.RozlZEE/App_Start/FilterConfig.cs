@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WebAPI.RozlZEE
+namespace WebApplication1
 {
     public class FilterConfig
     {

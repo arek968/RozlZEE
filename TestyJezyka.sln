@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestyJezyka", "TestyJezyka\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "dbRozlZEE", "dbRozlZEE\dbRozlZEE.sqlproj", "{13216D81-C366-48BC-AE2E-9A7B8B952BBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{B775B6B6-6B27-46B2-87FC-84085AF800EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RozlZEE", "WebApplication1\RozlZEE.csproj", "{B775B6B6-6B27-46B2-87FC-84085AF800EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

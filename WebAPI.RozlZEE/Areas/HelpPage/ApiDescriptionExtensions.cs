@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace WebAPI.RozlZEE.Areas.HelpPage
+namespace WebApplication1.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace WebAPI.RozlZEE.Areas.HelpPage.ModelDescriptions
+namespace WebApplication1.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

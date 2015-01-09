@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using WebAPI.RozlZEE.Areas.HelpPage.ModelDescriptions;
-using WebAPI.RozlZEE.Areas.HelpPage.Models;
+using WebApplication1.Areas.HelpPage.ModelDescriptions;
+using WebApplication1.Areas.HelpPage.Models;
 
-namespace WebAPI.RozlZEE.Areas.HelpPage
+namespace WebApplication1.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace WebAPI.RozlZEE.Areas.HelpPage.ModelDescriptions
+namespace WebApplication1.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

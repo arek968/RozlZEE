@@ -39,8 +39,16 @@ namespace TestyJezyka
                 var lnm = (from nm in lm select nm.Nazwa).ToArray<string>().Reverse();
                 foreach (var nm in lnm)
                 {
-                    Console.WriteLine(nm);
+                    Console.WriteLine(nm) ;
                 }
+
+
+                int[] ia = new int[10] { 1, 2, 3, 4, 5, 6, 7 ,8 ,9 ,0 };
+
+                long suma = ia.  Where((i, index) =>  i % 2 != 0 && index < 5).Sum(i => (long)i);
+                Console.WriteLine();
+                Console.WriteLine( suma.ToString() ?? ((int)-1).ToString());
+
 
                 //zmiana w programie do testów GIT
 

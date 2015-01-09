@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace WebAPI.RozlZEE.Areas.HelpPage.ModelDescriptions
+namespace WebApplication1.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {
