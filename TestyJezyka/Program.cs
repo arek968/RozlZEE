@@ -22,6 +22,8 @@ namespace TestyJezyka
             //Console.ReadLine();
             //return;
 
+            //yield
+
             using (var ctx = new RozlZEEEntities())
             {
                 //Can perform CRUD operation using ctx here..
